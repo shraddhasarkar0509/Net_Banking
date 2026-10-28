@@ -1,0 +1,585 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f3f6fa;
+    color: #172b4d;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 7%;
+}
+
+/* Navigation Bar */
+.navbar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e7ef;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    color: #102b4e;
+}
+
+.brand-icon {
+    width: 48px;
+    height: 48px;
+    background: #087f8c;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: 800;
+    box-shadow: 0 5px 14px rgba(8, 127, 140, 0.2);
+}
+
+.brand-name h2 {
+    font-size: 21px;
+    letter-spacing: 1.5px;
+    font-weight: 750;
+}
+
+.brand-name span {
+    display: block;
+    color: #77869a;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-top: 4px;
+}
+
+.secure-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #52647a;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.secure-dot {
+    width: 9px;
+    height: 9px;
+    background: #13a58c;
+    border-radius: 50%;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px 0;
+}
+
+/* Welcome Card */
+.welcome-card {
+    min-height: 440px;
+    background: #ffffff;
+    border-radius: 22px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(25, 48, 80, 0.08);
+    border: 1px solid #e9eef5;
+}
+
+.left-content {
+    padding: 65px 0 60px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-label {
+    color: #087f8c;
+    background: #e8f7f7;
+    padding: 9px 14px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+
+.left-content h1 {
+    font-size: clamp(32px, 3.5vw, 47px);
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    color: #132c4e;
+    font-weight: 750;
+}
+
+.left-content h1 span {
+    color: #078590;
+}
+
+.description {
+    color: #697a90;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 420px;
+    margin-top: 22px;
+}
+
+/* Main Button */
+.start-button {
+    margin-top: 30px;
+    padding: 16px 23px;
+    background: #087f8c;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 650;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+    transition: background 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+    box-shadow: 0 8px 20px rgba(8, 127, 140, 0.18);
+}
+
+.start-button:hover {
+    background: #066772;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(8, 127, 140, 0.25);
+}
+
+.arrow {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.helper-text {
+    margin-top: 17px;
+    font-size: 12px;
+    color: #8491a3;
+}
+
+/* Right Side Illustration */
+.right-content {
+    background: linear-gradient(145deg, #0e3557, #087f8c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.circle {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 400px;
+    height: 400px;
+    right: -110px;
+    top: -130px;
+}
+
+.circle-two {
+    width: 300px;
+    height: 300px;
+    left: -130px;
+    bottom: -140px;
+}
+
+.bank-illustration {
+    width: 100%;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg);
+}
+
+.illustration-top {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #e9eef4;
+}
+
+.mini-dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #c3d1df;
+}
+
+.illustration-title {
+    margin-left: auto;
+    color: #8291a4;
+    font-size: 9px;
+    font-weight: 750;
+    letter-spacing: 1px;
+}
+
+.balance-label {
+    font-size: 12px;
+    color: #748399;
+    margin-top: 26px;
+}
+
+.balance-amount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.rupee-symbol {
+    font-size: 30px;
+    color: #15395b;
+    font-weight: 700;
+}
+
+.balance-stars {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #15395b;
+}
+
+.card-divider {
+    height: 1px;
+    background: #e9eef4;
+    margin: 25px 0;
+}
+
+.account-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.info-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8f7f7;
+    color: #087f8c;
+    border-radius: 9px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.info-item span,
+.info-item strong {
+    display: block;
+}
+
+.info-item span {
+    color: #8794a5;
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.info-item strong {
+    color: #243e5b;
+    font-size: 12px;
+}
+
+.card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f1f8f8;
+    padding: 12px;
+    border-radius: 7px;
+    margin-top: 25px;
+    color: #087f8c;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.bottom-shield {
+    font-size: 14px;
+}
+
+/* Floating Badge */
+.floating-badge {
+    position: absolute;
+    bottom: 47px;
+    right: 18px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    background: #ffffff;
+    padding: 13px 16px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.badge-check {
+    width: 32px;
+    height: 32px;
+    background: #e7f7ef;
+    color: #16996e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.floating-badge strong,
+.floating-badge span {
+    display: block;
+}
+
+.floating-badge strong {
+    color: #203954;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.floating-badge div span {
+    color: #8390a1;
+    font-size: 10px;
+}
+
+/* Feature Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 28px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e8edf4;
+    border-radius: 12px;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.feature:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(25, 48, 80, 0.07);
+}
+
+.feature-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    background: #eaf6f7;
+    color: #087f8c;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.feature h3 {
+    font-size: 13px;
+    color: #203954;
+    margin-bottom: 6px;
+}
+
+.feature p {
+    font-size: 11px;
+    color: #8290a2;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    min-height: 70px;
+    border-top: 1px solid #e0e7ef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    color: #8491a3;
+    font-size: 11px;
+}
+
+/* Tablet and Mobile Responsive Design */
+@media (max-width: 1000px) {
+    .page-container {
+        padding: 0 4%;
+    }
+
+    .welcome-card {
+        grid-template-columns: 1fr 0.85fr;
+    }
+
+    .left-content {
+        padding: 45px 0 45px 35px;
+    }
+
+    .right-content {
+        padding: 25px;
+    }
+
+    .floating-badge {
+        right: 8px;
+        bottom: 20px;
+    }
+
+    .features {
+        gap: 12px;
+    }
+
+    .feature {
+        padding: 15px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .page-container {
+        padding: 0 5%;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+
+    .brand-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .brand-name h2 {
+        font-size: 17px;
+    }
+
+    .brand-name span {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .secure-label {
+        font-size: 10px;
+    }
+
+    .main-content {
+        padding: 25px 0;
+    }
+
+    .welcome-card {
+        grid-template-columns: 1fr;
+    }
+
+    .left-content {
+        padding: 38px 25px;
+    }
+
+    .left-content h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .right-content {
+        min-height: 340px;
+        padding: 35px 25px;
+    }
+
+    .bank-illustration {
+        max-width: 330px;
+    }
+
+    .floating-badge {
+        right: 12px;
+        bottom: 15px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .feature {
+        padding: 17px;
+    }
+
+    .footer {
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 380px) {
+    .secure-label {
+        font-size: 9px;
+        gap: 5px;
+    }
+
+    .brand-name h2 {
+        font-size: 15px;
+    }
+
+    .left-content h1 {
+        font-size: 31px;
+    }
+
+    .left-content {
+        padding: 30px 20px;
+    }
+
+    .right-content {
+        padding: 25px 15px;
+    }
+
+    .bank-illustration {
+        padding: 18px;
+    }
+
+    .floating-badge {
+        transform: scale(0.85);
+        transform-origin: bottom right;
+    }
+}

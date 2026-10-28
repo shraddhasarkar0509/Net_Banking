@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f8;
+    color: #333;
+}
+
+/* Header */
+
+.header {
+    background-color: #008080;
+    color: white;
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.header p {
+    margin: 0;
+}
+
+/* Main Container */
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.container h1 {
+    color: #0000ff;
+}
+
+.subtitle {
+    color: rgb(0, 128, 255);
+    text-decoration: bold;
+}
+
+/* Create and Update Boxes */
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.box {
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.box h2 {
+    color: #123f5e;
+}
+
+.box p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Form Box */
+
+.form-box {
+    background-color: white;
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+    text-align: left;
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #123f5e;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Input and Select */
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+
+button {
+    background-color: #123f5e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0b2f47;
+}
+
+/* Buttons at bottom */
+
+.buttons {
+    text-align: right;
+    margin-top: 25px;
+}
+
+.buttons button {
+    margin-left: 10px;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    color:rgb(0,0,0);
+    text-decoration: bold;
+    margin-top: 50px;
+    padding: 110px;
+}
